@@ -4,7 +4,7 @@ import 'package:covid_tracker/Model/WorldStatesModel.dart';
 import 'package:covid_tracker/Services/Utilities/app_url.dart';
 import 'package:http/http.dart' as http;
 
-class StatesSercices {
+class StatesServices {
   Future<WorldStatesModel> fetchWorldStatesRecords() async {
     final response = await http.get(Uri.parse(AppUrl.worldStatesApi));
     if (response.statusCode == 200) {
